@@ -185,10 +185,19 @@
         }
 
         .title {
-            background-color: #222;
-            padding: 15px;
-            font-size: 17px;
-        }
+    background-color: #222;
+    padding: 15px;
+    font-size: 17px;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
 
         .box-game-wrapper {
             display: flex;
